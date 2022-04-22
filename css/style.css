@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #000, #41bb83);
+    }
+
+.calc {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calc > button {
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #000;
+    color: white;
+}
+
+.calc > .operator {
+    background: #41b88375;
+}
+
+.calc > .visor {
+    grid-column: 1/-1;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calc > .visor > .valores-salvos {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.calc > .visor > .valores-digitados {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #111;
+}

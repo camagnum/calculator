@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap'); */
+
+@font-face {
+    font-family: DS-DIGI;
+    src: url("../font/DS-DIGI.TTF");
+}
 
 * {
     margin: 0;
@@ -6,7 +11,8 @@
     border: none;
     box-sizing: border-box;
     font-weight: bold;
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'DS-DIGI', sans-serif;
 }
 
 body {
@@ -24,13 +30,23 @@ body {
 
 .calc > button {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.3rem;
     background-color: #000;
-    color: white;
+    color: #fff;
+}
+
+.calc > button:hover {
+    background-color: #fff;
+    color: #111;
 }
 
 .calc > .operator {
-    background: #41b88375;
+    background-color: #41b88375;
+    /* font-size: 3rem; */
+}
+
+.calc > .equals {
+    background-color: #214937;
 }
 
 .calc > .visor {
@@ -57,9 +73,4 @@ body {
 
 .span-two {
     grid-column: span 2;
-}
-
-button:hover {
-    background-color: #fff;
-    color: #111;
 }
